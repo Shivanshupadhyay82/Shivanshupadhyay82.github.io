@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Minecraft PE</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f4f6;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+        .button {
+            padding: 15px 25px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="button" onclick="openMinecraft()">Open Minecraft PE</button>
+    <button class="button" onclick="redirectToAternos()">Go to Aternos</button>
+
+    <script>
+        function openMinecraft() {
+            // Attempt to open Minecraft PE
+            window.location.href = 'minecraft://';
+        }
+
+        function redirectToAternos() {
+            // Redirect to Aternos website
+            window.location.href = 'https://aternos.org';
+        }
+    </script>
+</body>
+</html>
